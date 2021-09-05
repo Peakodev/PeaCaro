@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
+:root {
+  --header-bg: rgba(255,255,255,0.2);
+  --button-bg: rgba(255,255,255,0.2);
+  --body-bg: rgba(255,255,255,0.3);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.html {
+  font-family: "Yesteryear", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #AB61E4;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  color: #fff;
+}
+
+#caro {
+  z-index: 1;
+  position: relative;
+  user-select: none;
+}
+
+.caro-box {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 420px;
+  width: 480px;
+  padding: 16px;
+  backdrop-filter: blur(40px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+.caro-box .caro-cell {
+  font-family: "Yesteryear", sans-serif;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+.caro-box .caro-cell:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#inform {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 400px;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  border: white solid 2px;
+  border-radius: 15px;
+  color: #ddcadb;
+  user-select: none;
+  transition: all 0.1s;
+}
+#inform:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+#inform .heading {
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#inform .content {
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+#inform .content span {
+  font-family: "Yesteryear", sans-serif;
+  font-size: 40px;
+}
+
+.bg-item {
+  position: absolute;
+  z-index: 0;
+}
+
+#bg-1 {
+  filter: blur(50px);
+}
+
+#bg-2 {
+  filter: blur(50px);
+}
+
+#bg-3 {
+  filter: blur(50px);
+}
+
+#bg-4 {
+  filter: blur(50px);
+}
+
+#bg-5 {
+  filter: blur(50px);
+}
+
+#bg-6 {
+  filter: blur(50px);
+}
+
+#bg-7 {
+  filter: blur(50px);
+}
+
+#bg-8 {
+  filter: blur(50px);
+}
+
+#bg-9 {
+  filter: blur(50px);
+}
+
+/* BREAKPOINT */
+#app {
+  overflow: hidden;
+}
+
+@media (min-width: 1089px) {
+  .hidden-on-XL {
+    display: none;
+  }
+}
+@media (min-width: 931px) and (max-width: 1088px) {
+  .hidden-on-L {
+    display: none;
+  }
+}
+@media (max-width: 1088px) {
+  .hidden-on-lte-L {
+    display: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 930px) {
+  .hidden-on-M {
+    display: none;
+  }
+}
+@media (min-width: 701px) and (max-width: 768px) {
+  .hidden-on-S {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hidden-on-lte-S {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  #Pea-clock {
+    font-size: 40px;
+  }
+
+  .calculator {
+    width: 80vw;
+  }
+
+  .calculator-body .btn-box {
+    grid-template-rows: repeat(5, 70px);
+  }
+}
+@media (max-width: 480px) {
+  .hidden-on-XXS {
+    display: none;
+  }
+}
+@media (max-width: 335px) {
+  .hidden-on-XXXS {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
